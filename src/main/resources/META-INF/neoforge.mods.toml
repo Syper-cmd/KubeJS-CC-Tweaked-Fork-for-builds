@@ -1,5 +1,5 @@
 modLoader = "javafml"
-loaderVersion = "[47,)"
+loaderVersion="${loader_version_range}"
 issueTrackerURL = "https://github.com/wolfieboy09/KubeJS-CC-1.20.1/issues"
 license = "LGPLv2.1"
 
@@ -19,29 +19,15 @@ Mod icon made by FooterMan16
 logoFile = "icon.png"
 
 [[dependencies.kjscc]]
-modId = "forge"
-mandatory = true
-versionRange = "[40,)"
-ordering = "NONE"
-side = "BOTH"
+modId="neoforge"
+type="required"
+versionRange="[${neo_version},)"
+ordering="NONE"
+side="BOTH"
 
 [[dependencies.kjscc]]
-modId = "minecraft"
-mandatory = true
-versionRange = "[1.20.1,)"
-ordering = "NONE"
-side = "BOTH"
-
-[[dependencies.kjscc]]
-modId = "computercraft"
-mandatory = true
-ordering = "AFTER"
-side = "BOTH"
-versionRange = "[*,)"
-
-[[dependencies.kjscc]]
-modId = "kubejs"
-mandatory = true
-ordering = "NONE"
-side = "BOTH"
-versionRange = "[2001.6.5-build.7,)"
+modId="minecraft"
+type="required"
+versionRange="${minecraft_version_range}"
+ordering="NONE"
+side="BOTH"
